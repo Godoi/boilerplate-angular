@@ -48,7 +48,7 @@
       "cross-env CI=true npm run test --silent --bail --findRelatedTests",
       "git add"
     ],
-    "*.{ts,js,json,scss}": [
+    "src/**/*.{ts,js,json,scss}": [
       "prettier --single-quote --write",
       "git add"
     ]
