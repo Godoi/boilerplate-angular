@@ -43,13 +43,13 @@
     }
   },
   "lint-staged": {
-    "src/**/*.scss":[
-      "cross-env CI=true stylelint --syntax scss",
-      "git add"
-    ],
     "src/**/*.ts": [
       "eslint --fix",
       "cross-env CI=true npm run test --silent --bail --findRelatedTests",
+      "git add"
+    ],
+    "src/**/*.{ts,js,json,scss}": [
+      "prettier --single-quote --write",
       "git add"
     ]
   },
