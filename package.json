@@ -43,9 +43,13 @@
     }
   },
   "lint-staged": {
+    "src/**/*.scss":[
+      "cross-env CI=true mpm run lint:css",
+      "git add"
+    ],
     "src/**/*.ts": [
       "eslint --fix",
-      "cross-env CI=true npm run test --bail --findRelatedTests",
+      "cross-env CI=true npm run test --silent --bail --findRelatedTests",
       "git add"
     ]
   },
