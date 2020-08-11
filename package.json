@@ -42,13 +42,6 @@
       }
     }
   },
-  "lint-staged": {
-    "src/**/*.ts": [
-      "cross-env CI=true npm run test --silent --bail --findRelatedTests",
-      "eslint --fix",
-      "git add"
-    ]
-  },
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
@@ -90,7 +83,6 @@
     "jest": "^26.3.0",
     "jest-createspyobj": "^1.2.2",
     "jest-preset-angular": "^8.2.1",
-    "lint-staged": "^10.2.11",
     "postcss-bem-linter": "^3.3.0",
     "prettier": "^2.0.5",
     "prettier-eslint": "^11.0.0",
