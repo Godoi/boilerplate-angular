@@ -7,15 +7,14 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## The essential dependencies are:
 
-Markup : 1. BEM 2. Commitlint 3. Cypress 4. Eslint 5. Husky 6. Jest 7. Prettier 8. Sass 9. Stylelint
+1. BEM 2. Commitlint 3. Cypress 4. Eslint 5. Husky 6. Jest 7. Prettier 8. Sass 9. Stylelint
 
 ## Extension recommendations for your code editor:
 
-Markup : 1. ESLint 2. Prettier - Code formatter 3. Stylelint
+1. ESLint 2. Prettier - Code formatter 3. Stylelint
 
 ## Specification for your committees
 
-Markup :
 <type>[(optional scope)]: <description>
 [optional body][optional footer]
 
