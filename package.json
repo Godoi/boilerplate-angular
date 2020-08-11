@@ -43,8 +43,9 @@
     }
   },
   "lint-staged": {
-    "*.{ts,js,json,scss}": [
-      "prettier --single-quote --write",
+    "src/**/*.ts": [
+      "eslint --fix",
+      "cross-env CI=true npm run test --silent --bail --findRelatedTests",
       "git add"
     ]
   },
