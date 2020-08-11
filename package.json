@@ -43,11 +43,6 @@
     }
   },
   "lint-staged": {
-    "src/**/*.ts": [
-      "eslint --fix",
-      "cross-env CI=true npm run test --silent --bail --findRelatedTests",
-      "git add"
-    ],
     "*.{ts,js,json,scss}": [
       "prettier --single-quote --write",
       "git add"
@@ -56,7 +51,8 @@
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-push": "lint-staged && npm run test"
+      "pre-commit": "lint-staged",
+      "pre-push": "lint-staged"
     }
   },
   "dependencies": {
