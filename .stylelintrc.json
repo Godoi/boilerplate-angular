@@ -1,0 +1,13 @@
+{
+  "extends": "stylelint-config-sass-guidelines",
+  "defaultSeverity": "warning",
+  "plugins": ["stylelint-selector-bem-pattern"],
+  "rules": {
+    "indentation": 2,
+    "plugin/selector-bem-pattern": {
+      "componentName": "/[-a-z]+$/",
+      "componentSelectors": "^\\.{componentName}(?:[-_a-z]+)?$",
+      "utilitySelectors": "^\\.util-[a-z]+$"
+    }
+  }
+}

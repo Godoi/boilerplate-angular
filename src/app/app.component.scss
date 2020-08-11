@@ -1,0 +1,40 @@
+.main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  position: relative;
+  text-align: center;
+  z-index: 20;
+
+  &__title {
+    color: #fff;
+    font-size: 4em;
+    margin: 0;
+  }
+
+  &__subTitle {
+    color: #fc9b2d;
+    font-weight: normal;
+  }
+
+  &__tag {
+    background-color: rgb(240, 230, 140);
+    border-radius: 2em;
+    font-size: 1.2em;
+    padding: 10px 20px;
+  }
+}
+
+.box-list {
+  display: flex;
+
+  &__tag {
+    background-color: rgb(240, 230, 140);
+    border-radius: 2em;
+    font-size: 1.2em;
+    margin: 0 10px;
+    padding: 10px 20px;
+  }
+}
