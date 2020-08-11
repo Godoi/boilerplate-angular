@@ -44,7 +44,7 @@
   },
   "lint-staged": {
     "src/**/*.scss":[
-      "cross-env CI=true mpm run lint:css",
+      "cross-env CI=true stylelint --syntax scss",
       "git add"
     ],
     "src/**/*.ts": [
