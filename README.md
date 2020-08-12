@@ -7,11 +7,22 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## The essential dependencies are:
 
-1. BEM <br>2. Commitlint <br>3. Cypress <br>4. Eslint <br>5. Husky <br>6. Jest <br>7. Prettier <br>8. Sass <br>9.storybook <br>10. Stylelint
+1. BEM <br>
+2. Commitlint <br>
+3. Cypress <br>
+4. Eslint <br>
+5. Husky <br>
+6. Jest <br>
+7. Prettier <br>
+8. Sass <br>
+9. storybook <br>
+10. Stylelint
 
 ## Extension recommendations for your code editor:
 
-1. ESLint <br>2. Prettier - Code formatter <br>3. Stylelint
+1. ESLint <br>
+2. Prettier - Code formatter <br>
+3. Stylelint
 
 ## Specification for your committees
 
