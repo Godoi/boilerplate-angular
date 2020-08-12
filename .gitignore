@@ -31,6 +31,10 @@ speed-measure-plugin*.json
 !.vscode/extensions.json
 .history/*
 
+# storybook
+/.storybook
+/src/stories
+
 # misc
 /.sass-cache
 /connect.lock
