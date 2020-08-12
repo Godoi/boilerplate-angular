@@ -9,8 +9,10 @@
     "test:watch": "npm run test -- --watch",
     "lint": "ng lint",
     "lint:css": "stylelint ./src/**/*.scss",
+    "lint:js": "tsc --noEmit && eslint . --ext js,ts,json --quiet --fix",
     "eslint": "tsc --noEmit && eslint . --ext js,ts,json --quiet --fix",
     "stylelint": "stylelint ./src/**/*.scss",
+    "prettify": "prettier --write ./src/**/*.{css,scss,js,ts,tsx}",
     "e2e": "concurrently \"ng serve\" \"cypress open\"",
     "cypress": "cypress open",
     "docs:json": "compodoc -p ./tsconfig.base.json -e json -d .",
@@ -47,9 +49,15 @@
   },
   "husky": {
     "hooks": {
+      "pre-commit": "lint-staged",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
       "pre-push": "cross-env CI=true npm run test --silent --bail --findRelatedTests"
     }
+  },
+  "lint-staged": {
+    "*.{css,scss,js,ts}": ["npm run prettify"],
+    "*.{css,scss}": ["npm run lint:css"],
+    "*.{js,ts}": ["npm run lint:js"]
   },
   "dependencies": {
     "@angular/animations": "~10.0.6",
@@ -93,6 +101,7 @@
     "jest": "^26.3.0",
     "jest-createspyobj": "^1.2.2",
     "jest-preset-angular": "^8.2.1",
+    "lint-staged": "^10.2.11",
     "postcss-bem-linter": "^3.3.0",
     "prettier": "^2.0.5",
     "prettier-eslint": "^11.0.0",
