@@ -22,7 +22,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 1. ESLint <br>
 2. Prettier - Code formatter <br>
-3. Stylelint
+3. Stylelint<br>
+   <br>
+   You can find all of these listed and some more important extensions in development in the [Angular Essentials package](https://marketplace.visualstudio.com/items?itemName=johnpapa.angular-essentials)
 
 ## Specification for your committees
 
