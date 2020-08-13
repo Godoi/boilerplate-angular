@@ -1,6 +1,30 @@
 {
   "name": "boilerplate-angular",
-  "version": "0.0.0",
+  "version": "0.0.1",
+  "description": "My personal template for Create Angular App.",
+  "keywords": [
+    "angular",
+    "bem",
+    "commitlint",
+    "cypress",
+    "eslint",
+    "husky",
+    "jest",
+    "lint-staged",
+    "prettier",
+    "sass",
+    "storybook",
+    "stylelint"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Godoi/boilerplate-angular",
+    "directory": "boilerplate-angular"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Godoi/boilerplate-angular/issues"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
